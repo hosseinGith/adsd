@@ -5,4 +5,5 @@ const container = document.querySelector(".container");
     x += 50;
     y += 50;
     container.style.transform = `rotate3d(${y}, ${x}, ${y},${x}deg)`;
+    alert("true")
   });
