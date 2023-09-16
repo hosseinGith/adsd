@@ -1,8 +1,8 @@
 const container = document.querySelector(".container");
 
   window.addEventListener("touchmove", (e) => {
-    let x = e.touches[0].clientX - container.clientHeight;
-    let y = e.touches[0].qclientY - container.clientWidth;
+    let x = e.touches[0].clientX - window.clientHeight;
+    let y = e.touches[0].clientY - window.clientWidth;
     let xOffset = x;
     let yOffset = y;
     xOffset > 100 ? xOffset = "-" xOffset : xOffset
