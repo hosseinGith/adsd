@@ -1,2 +1,2 @@
 # adsd
-vless://d5702730-1f47-4aa6-9f51-d2ad40771801@vpncustomize.website:443?mode=gun&security=reality&encryption=none&pbk=55xH-tqPd6c0VZpbwlxRxhmfvp9lVUtp45CDJLpcw2I&fp=firefox&spx=%2F&type=grpc&serviceName=@VPNCUSTOMIZE&sni=www.iranserver.com&sid=6b0541cd#@SRCVPN+reality+All
+vless://94a1220f-fcaa-4e34-8ec2-fc1ce86b47aa@all.vpncustomize.cam:2096?mode=gun&security=tls&encryption=none&type=grpc&serviceName=@VPNCUSTOMIZE&sni=CaNNectV2ray-OnlyIRAN-mCi-iraracnzsk-rgt-mkh.varzesh3-CDN.site#@SRCVPN+All
