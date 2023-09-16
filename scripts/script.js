@@ -6,8 +6,8 @@ if (navigator.platform === "Win32") {
     let y = e.clientY - container.clientWidth;
     let xOffest += x;
     let yOffest += y;
-    xOffest > 100? -xOffset : xOffset;
-    yOffest > 100? -yOffset : yOffset;
+    xOffest > 100? --xOffset : xOffset;
+    yOffest > 100? --yOffset : yOffset;
     container.style.transform = `rotate3d(${yOffest}, ${xOffest}, ${yOffest},${xOffest}deg)`;
   });
 }
