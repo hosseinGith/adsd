@@ -1,7 +1,11 @@
 const container = document.querySelector(".container");
 
-  window.addEventListener("mousemove", (e) => {
-    let x = e.clientX - container.clientHeight;
-    let y = e.clientY - container.clientWidth;
-    container.style.transform = `rotate3d(${y}, ${x}, ${y},${x}deg)`;
+  window.addEventListener("touchmove", (e) => {
+    let x = e.touches[0].clientX - container.clientHeight;
+    let y = e.touches[0].qclientY - container.clientWidth;
+    let xOffset = x;
+    let yOffset = y;
+    xOffset > 100 ? xOffset = "-" xOffset : xOffset
+    yOffset > 100 ? yOffset = "-" yOffset : yOffset
+    container.style.transform = `rotate3d(${yOffset}, ${xOffset}, ${yOffset},${x}deg)`;
   });
