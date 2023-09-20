@@ -1,39 +1,87 @@
-<!doctype html>
-<html lang="en" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>persian typing</title>
-    <style>
-        body {
-            background-color: #ff6060;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: b Koodak;
-            line-height: 1.8;
-        }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
 
-        body.orange {
-            background-color: #ffcc00;
-        }
-
-        .container {
-            max-width: 800px;
-            padding: 1rem 2.5rem;
-            margin: 2rem auto;
-            background-color: #fff;
-            min-height: 150px;
-            border-radius: 10px;
-            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-        }
-    </style>
-</head>
-<body contenteditable="true">
-<div class="container" >
-
-</div>
-<script src="app.js"></script>
-</body>
+  <body>
+    <center>
+      <h1>صفحه اصلی</h1>
+      <div style="position: absolute; left: 20px">
+        <a
+          href="htmls/index.html"
+          style="padding: 10px 20px; background: #919191"
+          >خرید ها</a
+        >
+      </div>
+      <form>
+        <fieldset>
+          <div data-price="200" data-name="کفش">
+            <img
+              src="https://mellishoes.ir/wp-content/uploads/2022/10/kzpyc-13192822-5.jpg"
+              alt=""
+              width="300"
+              height="300"
+            />
+            <br />
+            <p class="price">200 تومان</p>
+            <br />
+            <input type="submit" value="اضافه به سبد خرید" />
+          </div>
+          <div data-price="200" data-name="گیف">
+            <img
+              src="https://mellishoes.ir/wp-content/uploads/2023/05/4-4.jpg"
+              alt=""
+              width="300"
+              height="300"
+            />
+            <br />
+            <p class="price">200 تومان</p>
+            <br />
+            <input type="submit" value="اضافه به سبد خرید" />
+          </div>
+          <div data-price="200" data-name="پنکه">
+            <img
+              src="https://www.isfshahrkhanegi.com/wp-content/uploads/2023/03/Copper-600x840-1.png"
+              alt=""
+              width="300"
+              height="300"
+            />
+            <br />
+            <p class="price">200 تومان</p>
+            <br />
+            <input type="submit" value="اضافه به سبد خرید" />
+          </div>
+          <div data-price="45" data-name="رب گوجه">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4r9zPaOf34-rmGJEBM8hyVxXz9uZ5oAmM63is_a8sD4li5_9rse_cwpMTKYAEsax1L1k&usqp=CAU"
+              alt=""
+              width="300"
+              height="300"
+            />
+            <br />
+            <p class="price">45 تومان</p>
+            <br />
+            <input type="submit" value="اضافه به سبد خرید" />
+          </div>
+          <div data-price="18" data-name="ماکارونی">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+              width="300"
+              height="300"
+            />
+            <br />
+            <p class="price">18 تومان</p>
+            <br />
+            <input type="submit" value="اضافه به سبد خرید" />
+          </div>
+        </fieldset>
+      </form>
+    </center>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>

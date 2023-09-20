@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+form fieldset div {
+  display: inline-block;
+  padding: 10px 5px;
+  font-size: 20px;
+}
+input[type="submit"] {
+  font-size: 20px;
+}
