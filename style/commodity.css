@@ -1,0 +1,151 @@
+@font-face {
+  font-family: vazir;
+  src: url(../assets/fonts/Vazir.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  padding: 5px 10px;
+  font-family: vazir;
+}
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+header section > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  text-align: center;
+}
+.back {
+  width: 100%;
+  text-align: end;
+}
+
+.back a {
+  background-color: #ddd;
+  padding: 5px 20px;
+  color: #000;
+  border: 1px solid;
+}
+.commoditysInfo {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.commoditysInfo.active {
+  display: flex;
+}
+.prices {
+  text-align: center;
+}
+.deletingContainer button {
+  margin: 0 5px;
+  padding: 5px ;
+  font-size: 15px;
+  font-size: 20px;
+  font-family: vazir;
+}
+ul {
+  width: 100%;
+  display: grid;
+  gap: 20px 30px;
+  grid-auto-rows: 400px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  direction: ltr;
+  justify-content: center;
+  text-align: center;
+}
+
+ul li {
+  margin: 10px 20px;
+  position: relative;
+}
+ul li .onClickRemove{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  background-color: #0000004b;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  transition: all .3s;
+  display: none;
+}
+
+ul li .onClickRemove.active{
+  display: flex;
+  opacity: 1;
+  animation:onClickRemoveActive .3s linear;
+}
+@keyframes onClickRemoveActive {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+ul li.deletedItem{
+  animation: item .3s linear;
+  opacity: 0;
+}
+@keyframes item {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+ul li .lisCheckBox{
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  position: absolute;
+  background-color: #fff;
+  display: none;
+}
+ul li .lisCheckBox.active{
+  display: block;
+}
+ul li > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul li div img {
+  width: 100%;
+}
+
+ul li.deleted {
+  animation: deleteds 0.3s linear;
+  opacity: 0;
+}
+@keyframes deleteds {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -4,19 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>سبد خرید</title>
-    <link rel="stylesheet" href="../../style/style2.css" />
+    <link rel="stylesheet" href="../../style/commodity.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <center>
-      <h1>سبد خرید</h1>
-      <ul></ul>
-      <div class="calcolator">
-        <p class="prices"></p>
-      </div>
-    </center>
-    <div dir="ltr">
-      <a href="../../">صفحه اصلی</a>
-    </div>
+    <header>
+      <section>
+        <div class="container">
+          <div class="title">
+            <h1>سبد خرید</h1>
+          </div>
+          <div class="back">
+            <a href="../../">صفحه اصلی</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="commoditysInfo">
+            <div class="calcolator">
+              <p class="prices"></p>
+            </div>
+            <div class="deletingContainer">
+              <button class="deleteAll"><i class="fa fa-trash"></i></button>
+              <button class="deleteWithCheckBox"><i class="fa fa-check"></i></button>
+            </div>
+          </div>
+          <nav>
+            <ul></ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+
     <script src="../../scripts/commodityShowing.js"></script>
   </body>
 </html>
